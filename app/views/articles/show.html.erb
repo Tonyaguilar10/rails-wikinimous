@@ -1,0 +1,7 @@
+<div class= "header">
+  <h1>MovieWiki</h1>
+</div>
+<h2><%= @article.title %></h2>
+<p><%= @article.content %></p>
+<br>
+<%= link_to "Edit article", edit_article_path(@article) %>

@@ -13,3 +13,38 @@
  *= require_tree .
  *= require_self
  */
+ @import "bootstrap/scss/bootstrap";
+
+ .header{
+   background-image: url('https://64.media.tumblr.com/aa2ad65e21ad1c5dc386c3c7fa172db3/tumblr_old81jgcjH1veydt5o1_1280.gif');
+   background-size: contain;
+   height: 200px;
+   text-align: center;
+   color: azure;
+}
+
+ .list-inline {
+  list-style: none;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(207, 207, 207);
+}
+
+.list-inline li {
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.link a{
+  text-decoration: none;
+  color: white;
+}
+.btn-grey{
+  background-color: #A5A299;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin: 0 220px;
+}

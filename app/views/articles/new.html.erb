@@ -1,0 +1,15 @@
+<div class= "header">
+  <h1>MovieWiki</h1>
+</div>
+<div>
+  <%= form_for(@article) do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <%= f.label :content %>
+    <%= f.text_field :content %>
+    <%= f.submit %>
+  <% end %>
+</div>
+<div>
+  <a href= "/articles" class= "btn-grey">Go back</a>
+</div>

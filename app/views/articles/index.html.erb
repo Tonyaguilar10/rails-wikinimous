@@ -1,0 +1,12 @@
+<div class= "header">
+  <h1>MovieWiki</h1>
+</div>
+<div>
+  <ul class="list-inline">
+  <% @articles.each do |article| %>
+    <li class= "link"><%= link_to article.title, article_path(article) %>| <%= link_to "X", article_path(article), method: :delete,
+            data: { confirm: "Are you sure?" } %> </li>
+  <% end %>
+  </ul>
+  <a href= "/articles/new" class= "btn-grey">Add an article</a>
+</div>
